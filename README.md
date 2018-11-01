@@ -1,4 +1,4 @@
-# forfuturewo
+# forfuturewo-pc
 
 ## Project setup
 ```
