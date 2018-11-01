@@ -6,8 +6,8 @@
  */
 module.exports = {
   configureWebpack: {
-
   },
+  productionSourceMap: false,
   devServer: {
     port: 9525
   }
