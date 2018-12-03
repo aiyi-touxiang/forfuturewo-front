@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/vue/2.5.17/vue.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body class="test">
+    <div id="app">
+      <div @click="handleClick">{{ message }}</div>
+      <div><img src="http://www.wxapp-union.com/uc_server/avatar.php?uid=919&amp;size=big" /></div>
+    </div>
+  </body>
+  <style>
+    .test {
+      background: url(http://www.wxapp-union.com/uc_server/avatar.php?uid=919&amp;size=big) cover;
+    }
+  </style>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        message: 'Hello Vue!'
+      },
+      methods: {
+        handleClick() {
+          this.message = 'hhhhhhhhh'
+          alert(this.message)
+        }
+      }
+    })
+  </script>
+</html>
